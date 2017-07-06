@@ -1,0 +1,9 @@
+{
+  "name": "portfolio",
+  "dependencies": {
+    "css-hamburgers": "^0.8.1",
+    "font-awesome": "^4.7.0",
+    "jQuery.mmenu": "^6.1.0",
+    "magnific-popup": "^1.1.0"
+  }
+}

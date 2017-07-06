@@ -42,4 +42,60 @@ body
 	max-width: 100%
 	height: auto
 
+.left_column
+	background-color: $dark
+	min-height: 100vh
+	.avatar
+		display: block
+		width: 100%
+		position: relative
+		padding-top: 60px
+		img
+			display: block
+			margin: 0 auto
+			max-width: 180px
+			width: 80%
+			height: auto
+			border-radius: 10rem
+	.nav
+		display: block
+		margin-top: 60px
+		margin-left: -15px
+		margin-right: -15px
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li
+				display: block
+				width: 100%
+				font-weight: 300
+				transition: all 300ms ease
+				&:hover
+					box-shadow: inset 10px 0 0 0 $accent
+					background-color: rgba(0,0,0,0.45)
+				i
+					display: inline-block
+					width: 50px
+					text-align: center
+					font-size: 26px
+					line-height: 60px
+					margin-left: 10px
+					color: $ldark
+				a
+					display: inline-block
+					line-height: 60px
+					margin-left: 10px
+					font-size: 26px
+					color: white
+					text-decoration: none
+
+
+						
+
+
+
+
+
+
 @import "media" // Всегда в конце

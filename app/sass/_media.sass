@@ -8,24 +8,37 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
-
+@media only screen and (max-width : 991px)
+	.left_column
+		.nav
+			margin-top: 45px
+			ul
+				li
+					&:hover
+						box-shadow: inset 5px 0 0 0 $accent
+					i
+						display: none
+					a
+						font-size: 18px
+						line-height: 40px
+						margin-left: 15px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
+@media only screen and (max-width : 767px)
 	/**/
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width : 479px)
+	.left_column
+		display: none
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
+	.left_column
+		display: none
 
 /*==========  Mobile First  ==========*/
 
