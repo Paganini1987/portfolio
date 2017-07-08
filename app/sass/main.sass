@@ -53,7 +53,7 @@ body
 		img
 			display: block
 			margin: 0 auto
-			max-width: 180px
+			max-width: 150px
 			width: 80%
 			height: auto
 			border-radius: 10rem
@@ -74,28 +74,74 @@ body
 				&:hover
 					box-shadow: inset 10px 0 0 0 $accent
 					background-color: rgba(0,0,0,0.45)
-				i
-					display: inline-block
-					width: 50px
-					text-align: center
-					font-size: 26px
-					line-height: 60px
-					margin-left: 10px
-					color: $ldark
 				a
-					display: inline-block
-					line-height: 60px
-					margin-left: 10px
-					font-size: 26px
+					display: block
+					line-height: 50px
+					font-size: 20px
 					color: white
 					text-decoration: none
+					i
+						display: inline-block
+						width: 50px
+						text-align: center
+						font-size: 26px
+						line-height: 60px
+						margin-left: 10px
+						margin-right: 10px
+						color: $ldark
 
+.mobile_menu
+	display: flex
+	height: 60px
+	width: 100%
+	justify-content: space-between
+	align-items: center
+	padding: 0 15px 0 10px
+	background-color: $dark
+	color: white
+	font-size: 24px
+	border-left: 5px solid $accent 
+	p
+		margin: 0
+		padding: 0
 
-						
+.hamburger
+	padding: 0
+	.hamburger-inner
+		background-color: $accent
+		&:before, &:after
+			background-color: $accent
+			
+.mm-opened nav#my-menu
+	display: block!important
+	.avatar
+		display: flex
+		width: 100%
+		position: relative
+		justify-content: center
+		align-items: center
+		img
+			display: block
+			margin: 0 auto
+			width: 100px
+			height: auto
+			margin: 0 25px
+			border-radius: 10rem
 
+		.phone, .mail
+			border-radius: 10rem
+			width: 50px
+			height: 50px	
+			color: white
+			font-size: 30px
+			line-height: 50px
 
-
-
-
+	.mm-listview
+		margin-top: 96px
+	.mm-navbar
+		border-bottom: none
+	.mm-panels
+		background-color: $dark
+		color: white
 
 @import "media" // Всегда в конце

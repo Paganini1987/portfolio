@@ -16,23 +16,28 @@
 				li
 					&:hover
 						box-shadow: inset 5px 0 0 0 $accent
-					i
-						display: none
 					a
 						font-size: 18px
 						line-height: 40px
-						margin-left: 15px
+						padding-left: 15px
+						i
+							font-size: 18px
+							line-height: 40px
+							margin-left: 0
+							margin-right: 10px
+							width: 30px
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	/**/
-
+	.left_column
+		display: none
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
 	.left_column
 		display: none
-
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
