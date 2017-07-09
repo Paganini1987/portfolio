@@ -18,4 +18,13 @@ $(function() {
 		$('.hamburger').removeClass('is-active');
 	});
 
+	$(window).on('load', Height_calc());
+
+	window.onresize = Height_calc;
+
+	function Height_calc(){
+		var right = $('#my-content').outerHeight()
+		$('.left_column').height(right);
+	}
+
 });

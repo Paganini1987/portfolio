@@ -37,10 +37,42 @@ body
 	overflow-x: hidden
 	opacity: 1
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
+.h1
+	display: inline-block
+	position: relative
+	font-size: 36px
+	font-weight: 300
+	color: $accent
+	padding: 0
+	margin: 0
+	box-shadow: 0 1px 0 0 #e7e7e7
+	line-height: 50px
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		bottom: 0
+		left: 50%
+		margin-left: -25px
+		width: 50px
+		height: 10px
+		box-shadow: 0 1px 0 0 $accent
+
+.list
+	list-style-type: none
+
+	li
+		padding-left: 30px
+		position: relative
+		&:before
+			content: '\f00c'
+			display: block
+			position: absolute 
+			left: 0
+			font-family: fontawesome
+			color: $accent
+
+		
 
 .left_column
 	background-color: $dark
@@ -57,11 +89,11 @@ body
 			width: 80%
 			height: auto
 			border-radius: 10rem
+			border: 1px solid $ldark
 	.nav
 		display: block
 		margin-top: 60px
-		margin-left: -15px
-		margin-right: -15px
+
 		ul
 			list-style-type: none
 			padding: 0
@@ -71,6 +103,9 @@ body
 				width: 100%
 				font-weight: 300
 				transition: all 300ms ease
+				border-top: 1px solid $ldark
+				&:last-of-type
+					border-bottom: 1px solid $ldark
 				&:hover
 					box-shadow: inset 10px 0 0 0 $accent
 					background-color: rgba(0,0,0,0.45)
@@ -80,16 +115,20 @@ body
 					font-size: 20px
 					color: white
 					text-decoration: none
+					padding-left: 10px
 					i
 						display: inline-block
 						width: 50px
 						text-align: center
 						font-size: 26px
 						line-height: 60px
-						margin-left: 10px
+						margin-left: 0
 						margin-right: 10px
 						color: $ldark
-
+				&.active
+					background-color: $ldark
+					i
+						color: white
 .mobile_menu
 	display: flex
 	height: 60px
@@ -107,6 +146,7 @@ body
 
 .hamburger
 	padding: 0
+	margin-top: 10px
 	.hamburger-inner
 		background-color: $accent
 		&:before, &:after
@@ -137,11 +177,41 @@ body
 			line-height: 50px
 
 	.mm-listview
-		margin-top: 96px
+		margin-top: 110px
+		li
+			font-size: 20px
+			margin-bottom: 10px
+			i
+				margin-right: 15px
+				width: 40px
+				text-align: center
+
 	.mm-navbar
 		border-bottom: none
 	.mm-panels
 		background-color: $dark
 		color: white
+
+.right_column
+	display: block
+	width: 100%
+	padding-top: 100px
+	p
+		margin: 0 10px
+	.head
+		display: block
+		margin: 0 auto
+		width: 50%
+		text-align: center
+	.content
+		padding: 50px
+		font-size: 20px
+
+
+.profile
+	
+	
+
+
 
 @import "media" // Всегда в конце
