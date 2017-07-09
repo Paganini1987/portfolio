@@ -208,9 +208,53 @@ body
 		font-size: 20px
 
 
-.profile
-	
-	
+.isWorks
+	.right_column
+		.content
+			display: flex
+			justify-content: space-around
+			align-items: center
+			flex-wrap: wrap
+			.item
+				width: 40%
+				min-width: 300px
+				margin-bottom: 20px
+				padding: 0 5px
+				.img
+					display: block
+					position: relative
+					height: 270px
+					background-position: top
+					background-size: cover
+					&:before
+						content: '\f00e'
+						font-family: fontawesome
+						color: $accent
+						font-size: 95px
+						line-height: 270px
+						text-align: center
+						display: block
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						background-color: rgba(255,255,255,0.5)
+						opacity: 0
+						transition: 300ms ease
+					
+					&:hover 
+						&:before
+							opacity: 1
+							cursor: pointer
+
+
+
+				.description
+					padding: 10px
+					p
+						padding: 0
+						margin: 0
 
 
 

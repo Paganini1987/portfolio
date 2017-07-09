@@ -5,7 +5,11 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
+	.isWorks
+		.right_column
+			.content
+				padding: 0
+				padding-top: 50px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -26,25 +30,37 @@
 							margin-left: 0
 							margin-right: 10px
 							width: 30px
-
+	.right_column
+		.content
+			padding: 0
+			padding-top: 50px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	/**/
 	.left_column
 		display: none
+	.right_column
+		padding-top: 0px
+		.content
+			padding: 0
+			padding-top: 30px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
-	.left_column
-		display: none
-
+	/**/
+	.right_column
+		.content
+			padding: 0
+			padding-top: 30px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-	.left_column
-		display: none
-
+	.right_column
+		.content
+			padding: 0
+			padding-top: 30px
 /*==========  Mobile First  ==========*/
 
 /* Custom, iPhone Retina */
