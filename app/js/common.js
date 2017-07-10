@@ -45,4 +45,20 @@ $(function() {
 	    }
 	  }
 	});
+
+	//fixMenu
+
+	var menuY = $('#list').offset().top;
+	var menuWidth = $('#list').width();
+
+	$(window).on('scroll', function(){
+		var sTop = $(this).scrollTop();
+		if(sTop>menuY){
+			$('#list').addClass('menuFixed').width(menuWidth);
+		}else{
+			$('#list').removeClass('menuFixed');
+		}
+
+	});
+
 });

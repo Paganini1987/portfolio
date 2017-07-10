@@ -37,6 +37,11 @@ body
 	overflow-x: hidden
 	opacity: 1
 
+.menuFixed
+	position: fixed!important
+	top: 0!important
+	margin: 0!important
+
 .h1
 	display: inline-block
 	position: relative
@@ -74,6 +79,7 @@ body
 		
 
 .left_column
+	position: relative
 	background-color: $dark
 	min-height: 100vh
 	.avatar
@@ -89,6 +95,7 @@ body
 			height: auto
 			border-radius: 10rem
 			border: 1px solid $ldark
+
 	.nav
 		display: block
 		margin-top: 60px
@@ -128,6 +135,8 @@ body
 					background-color: $ldark
 					i
 						color: white
+		
+
 .mobile_menu
 	display: flex
 	height: 60px
