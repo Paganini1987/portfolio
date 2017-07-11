@@ -49,16 +49,17 @@ $(function() {
 	//fixMenu
 
 	var menuY = $('#list').offset().top;
-	var menuWidth = $('#list').width();
-
-	$(window).on('scroll', function(){
+	
+	function sideMenu(){
+		var menuWidth = $('.left_column').width();
 		var sTop = $(this).scrollTop();
 		if(sTop>menuY){
 			$('#list').addClass('menuFixed').width(menuWidth);
 		}else{
-			$('#list').removeClass('menuFixed');
+			$('#list').removeClass('menuFixed').width(menuWidth);
 		}
+	};
 
-	});
-
+	$(window).on('scroll', sideMenu);
+	$(window).on('resize', sideMenu);
 });
