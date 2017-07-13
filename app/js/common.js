@@ -62,4 +62,36 @@ $(function() {
 
 	$(window).on('scroll', sideMenu);
 	$(window).on('resize', sideMenu);
+
+
+	//определение скролла вверх
+	var scroll = ({
+		state: [],
+		clearState: function(){
+			this.state=[]
+		},
+		addClass: function(obj){
+			$(obj).addClass('mobileMenuFixed')
+		},
+		removeClass: function(obj){
+			$(obj).removeClass('mobileMenuFixed')
+		} 
+	})
+
+	function toTop(){
+		scroll.state.push($(window).scrollTop())
+		if(scroll.state.length>2 && $(window).scrollTop()>100){
+			if(scroll.state[1]>scroll.state[2]){
+				scroll.clearState()
+				scroll.addClass('.mobile_menu')
+			}else{
+				scroll.clearState()
+				scroll.removeClass('.mobile_menu')
+			}
+		}
+	}
+
+	$(window).on('scroll', toTop)
+
+
 });
